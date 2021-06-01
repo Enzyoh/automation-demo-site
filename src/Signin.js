@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Signin = () => {
+const Signin = ({ setIsSignedIn, setUserType }) => {
     const [name, setName] = useState('')
     const [password, setPassword] = useState('')
     
@@ -13,7 +13,8 @@ const Signin = () => {
     }
 
     const handleSubmit = (event) => {
-        alert('A name was submitted: ' + name);
+        if (setUserType) setUserType(name) //hard-coded for convenience
+        if (setIsSignedIn) setIsSignedIn(true) //hard-coded for convenience
         event.preventDefault();
     }
 
