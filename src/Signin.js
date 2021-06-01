@@ -22,11 +22,11 @@ const Signin = ({ setIsSignedIn, setUserType }) => {
         <>
             <h4> Sign in </h4>
             <form onSubmit={handleSubmit}>
-                <input type="text" value={name} onChange={handleNameChange} placeholder='Username' />
+                <input type="text" value={name} onChange={handleNameChange} placeholder='Username' id='Username' />
                 <br />
                 <br />
 
-                <input type="password" value={password} onChange={handlePasswordChange} placeholder='Password' />
+                <input type="password" value={password} onChange={handlePasswordChange} placeholder='Password' id='Password'/>
                 <br />
                 <br />
 

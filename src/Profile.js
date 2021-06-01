@@ -27,7 +27,7 @@ const Profile = ({userType}) => {
             <h4> { `${getUserType()} profile`} </h4>
             {userType === 'admin' && 
                 <form onSubmit={handleSubmitAttach}>
-                    <input type="file" />
+                    <input type="file" id='fileUploadInput' />
                     <br />
                     <br />
 
@@ -44,11 +44,11 @@ const Profile = ({userType}) => {
 
                     <input type="radio" id="other" name="gender" value="other" />
                     <label for="other">Other</label>
-                    <input type="submit" value="Send gender" id='submitGenderBtn' />
 
+                    <input type="submit" value="Send gender" id='submitGenderBtn' />
                 </form>}
 
-            {(userType === 'guest' || userType === '') && <h5> Welcome to our site, you are an observer </h5>}
+            {(userType === 'guest' || userType === '') && <h5 id='observerText'> Welcome to our site, you are an observer </h5>}
         </>
     )
   }
