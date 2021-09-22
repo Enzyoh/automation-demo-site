@@ -5,7 +5,7 @@ import Profile from './Profile';
 
 const App = () =>{
   const [isSignedIn, setIsSignedIn] = React.useState(false)
-  const [userType, setUserType] =React.useState('')
+  const [userType, setUserType] = React.useState('')
 
   return (
     <div className="App">
