@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
 const Signin = ({ setIsSignedIn, setUserType }) => {
-    const [name, setName] = useState('')
-    const [password, setPassword] = useState('')
+    const [name, setName] = React.useState('')
+    const [password, setPassword] = React.useState('')
     
     const handleNameChange = (event) => {
         setName(event.target.value)
